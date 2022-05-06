@@ -1,14 +1,27 @@
 import { useState } from 'react'
 import logo from './logo.svg'
-import './App.css'
+import {CardPatients} from './components/common/CardPatients'
+import { Container } from '@mui/material';
 
 function App() {
   const [count, setCount] = useState(0)
 
+ 
+
   return (
-    <div className="App">
-        <p>Hello!</p>
-    </div>
+    <>
+      <div className="App">
+        <p>Hello!</p>       
+      </div>
+      <CardPatients  
+          imgSrc='' 
+          name='Renata Augusto Ferreira' 
+          labelTestPerformed='TESTE REALIZADO'
+          testPerformed= 'TDAH CAB ADHD' 
+          labelDate='REALIZADO EM:'
+          date= '20/10/2023' 
+      />
+    </>
   )
 }
 
